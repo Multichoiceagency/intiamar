@@ -1,0 +1,68 @@
+/* Footer specific styles */
+
+/* Hide scrollbar for category navigation */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom animations for hover effects */
+.footer-category-item {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
+.footer-category-item:hover {
+  @apply text-gray-600;
+}
+
+/* Social media icon animations */
+.social-icon {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.social-icon:hover {
+  @apply scale-110 opacity-80;
+}
+
+/* Email input focus styles */
+.email-input:focus {
+  @apply outline-none ring-2 ring-gray-300 ring-opacity-50;
+}
+
+/* Custom button styles for the footer */
+.footer-btn {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+.footer-btn:hover {
+  @apply transform scale-105;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 768px) {
+  .footer-grid {
+    @apply grid-cols-1 gap-8;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-grid {
+    @apply grid-cols-2 gap-10;
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer-grid {
+    @apply grid-cols-5 gap-12;
+  }
+}
+
+/* Custom font loading for Trirong and Tenor Sans */
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
